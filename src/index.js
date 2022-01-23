@@ -12,7 +12,7 @@ app.use(multer().any());
 
 const mongoose = require('mongoose')
 // mongoose connection
-
+mongoose.set('useCreateIndex', true);
 mongoose.connect("mongodb+srv://users-open-to-all:hiPassword123@cluster0.uh35t.mongodb.net/Ravikumar_Dhotre-DataBase?retryWrites=true&w=majority",{ useUnifiedTopology: true, useNewUrlParser: true })
     .then(() => console.log('mongodb running on 27017'))
     .catch(err => console.log(err))
