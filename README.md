@@ -1,6 +1,7 @@
-# UrlShortner-website
-creating a short url from long url with the help of redis/cache database
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=bold&color=%23F7CC5B&size=28&center=true&lines=UrlShortner-website)](https://git.io/typing-svg)
 
+creating a short url from long url using Redis
+required tech stacks: Redis,Caching,Mongodb,node.js,express.js
 ## Scalable URL Shortner Project Requirement
 
 ## Phase I
@@ -81,14 +82,25 @@ If you haven’t used tinyurl.com before, please try creating a new shortened UR
 ```
 ## Response samples
 
+## 1.Post url response
+![response for post url](https://user-images.githubusercontent.com/93571776/150661518-092f2d6d-be9e-4ece-b328-d44adc90a5e0.png)
+
+## 2.before response
+![befor redirecting ](https://user-images.githubusercontent.com/93571776/150661523-a377380a-4fae-40e1-95ac-2cd42b9aca2c.png)
+## 3.after redirecting Url
+![after redirect the url](https://user-images.githubusercontent.com/93571776/150661540-34d69bd2-ecfd-40c1-9759-95503c002433.png)
+
+
 ### Url shorten response
 ```yaml
 {
-  "data": {
-    "longUrl": "http://www.abc.com/oneofthelongesturlseverseenbyhumans.com",
-    "shortUrl": "http://localhost:3000/ghfgfg",
-    "urlCode": "ghfgfg"
-  } 
+    "status": true,
+    "data": {
+        "_id": "61ecb1d8bad6d53894f2822d",
+        "longUrl": "https://www.amazon.in/MOTOROLA-Edge-Fusion-Cyber-Teal/dp/B09HV4FZGV/ref=sr_1_1?crid=2X0CF2OYG75YQ&keywords=motorola%2Bmobiles&nav_sdd=aps&qid=1642901924&refinements=p_36%3A1318507031%2Cp_n_feature_eight_browse-bin%3A8561112031&rnid=8561111031&s=electronics&sprefix=moto&sr=1-1&th=1",
+        "shortUrl": "http://localhost:3000/rcat",
+        "urlCode": "rcat"
+    }
 }
 
 ```
