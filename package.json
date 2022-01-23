@@ -1,0 +1,33 @@
+{
+  "name": "UrlShortnerWebsite",
+  "version": "1.0.0",
+  "description": "repo for assignments and practice problems",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ravikumardhotre/UrlShortner-Website.git"
+  },
+  "author": "Ravikumar Dhotre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ravikumardhotre/issues"
+  },
+  "homepage": "https://github.com/ravikumardhotre/UrlShortner-Website.git#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.9",
+    "multer": "^1.4.3",
+    "nodemon": "^2.0.13",
+    "redis": "^3.1.2",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "@types/redis": "^4.0.11"
+  }
+}
